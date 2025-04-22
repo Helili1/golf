@@ -116,7 +116,7 @@ main {
 
   .wrapper {
     background: center / cover no-repeat
-    url('/img/Фон.png');
+    url('../img/Фон.png');
     height: 100%;
     width: 100%;
     display: flex;

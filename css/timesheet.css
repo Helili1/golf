@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header_nav a{
+    text-decoration: none;
+}
+
+/* плашка */
+
+.header_nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 35px;
+    background-color: #e2e2e2;
+    transition: all 0.3s ease;
+    color: #13724f;
+    font-size: 20px;
+}
+
+.header_ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo a{
+    color: #13724f;
+}
+
+.logo img{
+    height: 50px;
+    width: 50px;
+}
+
+/* наведение */
+/* Добавляем эти стили в раздел header */
+.header_item a {
+    color: #0b2703;
+    font-weight: 500;
+    padding: 5px 0;
+    position: relative;
+    transition: color 0.3s ease;
+    display: inline-block;
+    color: #13724f;
+
+}
+
+.header_item a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: #0b2703;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.header_item a:hover {
+    color: #2c3e50;
+}
+
+.header_item a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+
+/* Мобильное меню */
+.mobile-menu {
+    display: none;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background: #13724f;
+    transition: all 0.3s ease;
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    min-width: 200px;
+    right: 20px !important;
+    left: auto !important;
+}
+
+.dropdown-item {
+    color: #13724f !important;
+    padding: 12px 20px !important;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background: #f8f9fa !important;
+    transform: translateX(5px);
+}
+
+/* Адаптация */
+@media screen and (max-width: 992px) {
+    .desktop-menu {
+        display: none;
+    }
+    
+    .mobile-menu {
+        display: block;
+        margin-right: 20px;
+    }
+    
+    .header_nav {
+        padding: 15px 20px;
+    }
+    
+    .logo {
+        padding: 10px 0;
+    }
+    
+    .wrapper__title {
+        font-size: 3rem !important;
+        text-align: center;
+    }
+    
+    .wrapper {
+        padding: 0 2rem !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .logo a {
+        font-size: 18px;
+    }
+    
+    .wrapper__title {
+        font-size: 2.5rem !important;
+    }
+    
+    .dropdown-menu {
+        min-width: 180px;
+    }
+}
+
+
+/* Стили для таблиц */
+.timetable_spring, 
+.timetable_winter {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+caption {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #13724f;
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+thead {
+    background: #13724f;
+    color: white;
+}
+
+th, td {
+    padding: 1.2rem;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    min-width: 100px;
+}
+
+th {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+tbody tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+tbody td:empty {
+    background: #f1f3f5;
+}
+
+/* Карточки адресов */
+.adrees_for_activity {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.address-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.address-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.address-card:hover {
+    transform: translateY(-5px);
+}
+
+.map-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid #13724f;
+}
+
+.address-content {
+    padding: 1.5rem;
+}
+
+.address-link {
+    color: #13724f;
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    margin: 1rem 0;
+}
+
+.season-tag {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.winter-tag {
+    background: #e3f2fd;
+    color: #1976d2;
+}
+
+.spring-tag {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .address-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    caption {
+        font-size: 1.2rem;
+    }
+    
+    th, td {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .timetable_spring, 
+    .timetable_winter {
+        padding: 1rem 0.5rem;
+    }
+    
+    .address-card {
+        margin: 0.5rem;
+    }
+    
+    .address-content {
+        padding: 1rem;
+    }
+    
+    .season-tag {
+        font-size: 0.8rem;
+    }
+}

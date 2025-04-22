@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Расписание</title>
+    <link rel="stylesheet" href="../css/timesheet.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="header_nav">
+        <div class="logo">
+          <img src="../img/logo.png" alt="logo" />
+          <a href="../index.html">Гольф</a>
+        </div>
+
+        <!-- Десктопное меню -->
+        <ul class="header_ul desktop-menu">
+          <li class="header_item">
+            <a href="./abotgolf.html">О гольфе</a>
+          </li>
+          <li class="header_item">
+            <a href="./golfschool.html">Гольф в МБОУ СОШ 17</a>
+          </li>
+          <li class="header_item">
+            <a href="./timesheet.html">Расписание</a>
+          </li>
+          <li class="header_item">
+            <a href="./contacts.html">Контакты</a>
+          </li>
+        </ul>
+
+        <!-- Мобильное меню -->
+        <div class="dropdown mobile-menu">
+          <button
+            class="menu-btn"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="./abotgolf.html">О гольфе</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="./golfschool.html"
+                >Гольф в МБОУ СОШ 17</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="./timesheet.html"
+                >Расписание</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="./contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="timetable_spring">
+        <table>
+          <caption>
+            Расписание занятий в весенний период
+          </caption>
+          <thead>
+            <tr>
+              <th>Пн</th>
+              <th>Вт</th>
+              <th>Ср</th>
+              <th>Чт</th>
+              <th>Пт</th>
+              <th>Сб</th>
+              <th>Вс</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>занятий нет</td>
+              <td>занятий нет</td>
+              <td>занятий нет</td>
+              <td>занятий нет</td>
+              <td>занятий нет</td>
+              <td>
+                10:00- <br />
+                11:30
+              </td>
+              <td>
+                10:00-<br />
+                11:30
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="timetable_winter">
+        <table>
+          <caption>
+            Расписание занятий в зимний период
+          </caption>
+          <thead>
+            <tr>
+              <th>Пн</th>
+              <th>Вт</th>
+              <th>Ср</th>
+              <th>Чт</th>
+              <th>Пт</th>
+              <th>Сб</th>
+              <th>Вс</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>занятий нет</td>
+              <td>занятий нет</td>
+              <td>занятий нет</td>
+              <td>
+                12:00-<br />
+                13:00
+              </td>
+              <td>занятий нет</td>
+              <td>
+                11:00-<br />
+                12:30
+              </td>
+              <td>занятий нет</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="adrees_for_activity">
+        <h2>Места для тренировок</h2>
+        <div class="address-cards">
+          <!-- Карточка 1 -->
+          <div class="address-card">
+            <img
+              src="../img/гольфполеадресс.png"
+              alt="Поле для гольфа"
+              class="map-image"
+            />
+            <div class="address-content">
+              <h3>Гольф поле</h3>
+              <a
+                href="https://yandex.ru/maps/org/don/1025801627/?ll=40.058169%2C47.247656&mode=search&sctx=ZAAAAAgBEAAaKAoSCeEnDqDfDURAEWsMOiF0tEdAEhIJRUYHJGHfuj8Ry7%2BWV663pT8iBgABAgMEBSgKOABA7gFIAWIwcmVhcnI9c2NoZW1lX0xvY2FsL0dlby9GaWx0ZXJJY29uc0Rpc2FibGVkTGlzdD0wagJydZ0BzczMPaABAKgBAL0BDjnF38IBBZv7kekDggJB0KHRgi4g0KHRgtCw0YDQvtGH0LXRgNC60LDRgdGB0LrQsNGPINCT0L7Qu9GM0YQg0LrQu9GD0LEgItCU0L7QvSKKAgCSAgYxMzY0ODGaAgxkZXNrdG9wLW1hcHM%3D&sll=40.058169%2C47.247656&sspn=0.153686%2C0.062294&text=Ст.%20Старочеркасская%20Гольф%20клуб%20%22Дон%22&z=13.45"
+                class="address-link"
+                target="_blank"
+              >
+                Ст. Старочеркасская Гольф клуб "Дон"
+              </a>
+              <span class="season-tag spring-tag">Весенний период</span>
+            </div>
+          </div>
+
+          <!-- Карточка 2 -->
+          <div class="address-card">
+            <img
+              src="../img/школаадресс.png"
+              alt="Крытый комплекс"
+              class="map-image"
+            />
+            <div class="address-content">
+              <h3>МБОУ СОШ 17</h3>
+              <a
+                href="https://yandex.ru/maps/238/novocherkassk/house/aleksandrovskaya_ulitsa_62/YEkYdwZgSEcPQFptfXhwcXVlZQ==/?ll=40.110127%2C47.410961&z=16.93"
+                class="address-link"
+                target="_blank"
+              >
+                ул.Александровская,д.62
+              </a>
+              <span class="season-tag winter-tag">Зимний сезон</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="../js/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

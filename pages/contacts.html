@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакты</title>
+    <link rel="stylesheet" href="../css/contacts.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="header_nav">
+        <div class="logo">
+          <img src="../img/logo.png" alt="logo" />
+          <a href="../index.html">Гольф</a>
+        </div>
+
+        <!-- Десктопное меню -->
+        <ul class="header_ul desktop-menu">
+          <li class="header_item">
+            <a href="./abotgolf.html">О гольфе</a>
+          </li>
+          <li class="header_item">
+            <a href="./golfschool.html">Гольф в МБОУ СОШ 17</a>
+          </li>
+          <li class="header_item">
+            <a href="./timesheet.html">Расписание</a>
+          </li>
+          <li class="header_item">
+            <a href="./contacts.html">Контакты</a>
+          </li>
+        </ul>
+
+        <!-- Мобильное меню -->
+        <div class="dropdown mobile-menu">
+          <button
+            class="menu-btn"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="./abotgolf.html">О гольфе</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="./golfschool.html"
+                >Гольф в МБОУ СОШ 17</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="./timesheet.html"
+                >Расписание</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="./contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1>Тренерский состав</h1>
+      <div class="card shadow-lg trainer-card">
+        <div class="row g-0">
+          <!-- Фото тренера -->
+          <div class="col-md-4">
+            <img
+              src="../img/тренер.jpg"
+              class="img-fluid rounded-start"
+              alt="Тренер по гольфу"
+              loading="lazy"
+            />
+          </div>
+
+          <!-- Информация о тренере -->
+          <div class="col-md-8 d-flex align-items-center">
+            <div class="card-body">
+              <h1 class="card-title mb-4">Перегудова Ольга Владимировна</h1>
+
+              <div class="card-text mb-4">
+                <h5 class="text-muted mb-3">
+                  Профессиональный тренер по гольфу
+                </h5>
+                <p class="mb-3">
+                  учитель с высшей категорией по физической культуре МБОУ СОШ
+                  17, тренер по гольфу и судья II категории
+                </p>
+                <p class="mb-0">
+                  Образование: Российский Государственный Университет Физической
+                  Культуры.
+                </p>
+              </div>
+
+              <!-- Блок контактов -->
+              <div class="contact-block mt-4">
+                <a href="tel:+79991234567" class="btn btn-success btn-lg">
+                  📞 Записаться на занятие: +7(908) 182-00-52
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="../js/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

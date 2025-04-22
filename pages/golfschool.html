@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Гольф в МБОУ СОШ 17</title>
+    <link rel="stylesheet" href="../css/golfschool.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="header_nav">
+        <div class="logo">
+          <img src="../img/logo.png" alt="logo" />
+          <a href="../index.html">Гольф</a>
+        </div>
+
+        <!-- Меню (оставлено без изменений) -->
+        <ul class="header_ul desktop-menu">
+          <li class="header_item">
+            <a href="./abotgolf.html">О гольфе</a>
+          </li>
+          <li class="header_item">
+            <a href="./golfschool.html">Гольф в МБОУ СОШ 17</a>
+          </li>
+          <li class="header_item">
+            <a href="./timesheet.html">Расписание</a>
+          </li>
+          <li class="header_item">
+            <a href="./contacts.html">Контакты</a>
+          </li>
+        </ul>
+
+        <!-- Мобильное меню -->
+        <div class="dropdown mobile-menu">
+          <button
+            class="menu-btn"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="./abotgolf.html">О гольфе</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="./golfschool.html"
+                >Гольф в МБОУ СОШ 17</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="./timesheet.html">Расписание</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="./contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1>Гольф в МБОУ СОШ 17</h1>
+
+      <!-- Секция тренировок -->
+      <section class="activity-section">
+        <h2>Тренировки</h2>
+        <div class="container">
+          <!-- Карточки тренировок -->
+          <div class="card">
+            <img
+              src="../img/т1.jpg"
+              loading="lazy"
+              class="card-img-top"
+              alt="Тренировка"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Тренировка</h5>
+              <p class="card-text">
+                Тренировка по гольфу была проведена 19.04.25 на базе школы
+              </p>
+              <div class="activity-details">
+                <span class="badge bg-success">Проведено</span>
+                <span class="participants">Участников: 15</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Добавьте остальные карточки тренировок аналогично -->
+        </div>
+      </section>
+
+      <!-- Секция соревнований -->
+      <section class="activity-section">
+        <h2>Соревнования</h2>
+        <div class="container">
+          <!-- Пример карточки соревнования -->
+          <div class="card">
+            <img
+              src="../img/с1.jpg"
+              loading="lazy"
+              class="card-img-top"
+              alt="Соревнование"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Школьный турнир</h5>
+              <p class="card-text">Ежегодный школьный турнир по гольфу</p>
+              <div class="activity-details">
+                <span class="badge bg-warning">Запланировано</span>
+                <span class="date">Дата: 25.05.25</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Добавьте дополнительные карточки соревнований -->
+        </div>
+      </section>
+    </main>
+
+    <!-- Скрипты остаются без изменений -->
+    <script src="../js/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

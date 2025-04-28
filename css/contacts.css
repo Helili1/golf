@@ -250,3 +250,130 @@ h1{
       font-size: 0.9rem;
     }
   }
+
+  /* Основные адаптивные стили */
+@media (max-width: 1200px) {
+  .trainer-photo img {
+    height: 360px;
+  }
+  
+  .trainer-name {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .content-wrapper {
+    padding: 15px;
+  }
+  
+  .page-title {
+    font-size: 2.2rem;
+    margin: 1.5rem 0;
+  }
+  
+  .trainer-card {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2rem;
+    padding-bottom: 0.8rem;
+  }
+  
+  .page-title::after {
+    width: 60px;
+    height: 2px;
+  }
+  
+  .trainer-photo {
+    padding: 10px;
+  }
+  
+  .trainer-photo img {
+    height: 320px;
+    border-radius: 10px;
+  }
+  
+  .trainer-info {
+    padding: 1.5rem;
+  }
+  
+  .trainer-name {
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .trainer-badge {
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+  }
+  
+  .trainer-details p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .header_nav {
+    padding: 12px 15px;
+  }
+  
+  .logo img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .logo a {
+    font-size: 16px;
+  }
+  
+  .page-title {
+    font-size: 1.7rem;
+    margin: 1rem 0;
+  }
+  
+  .trainer-photo img {
+    height: 280px;
+  }
+  
+  .trainer-name {
+    font-size: 1.4rem;
+  }
+  
+  .cta-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .cta-button i {
+    font-size: 1rem;
+    margin-right: 0.6rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .trainer-photo img {
+    height: 250px;
+  }
+  
+  .trainer-name {
+    font-size: 1.3rem;
+  }
+  
+  .trainer-badge {
+    font-size: 0.85rem;
+  }
+  
+  .cta-button {
+    flex-direction: column;
+    padding: 0.8rem;
+    gap: 0.4rem;
+  }
+  
+  .cta-button i {
+    margin-right: 0;
+  }
+}

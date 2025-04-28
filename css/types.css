@@ -1,0 +1,258 @@
+  /* Общие стили */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Хедер */
+  .header_nav a{
+    text-decoration: none;
+}
+
+
+/* плашка */
+
+.header_nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 35px;
+    background-color: #e2e2e2;
+    transition: all 0.3s ease;
+    color: #13724f;
+    font-size: 20px;
+}
+
+.header_ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo a{
+    color: #13724f;
+}
+
+.logo img{
+    height: 50px;
+    width: 50px;
+}
+
+/* наведение */
+/* Добавляем эти стили в раздел header */
+.header_item a {
+    color: #0b2703;
+    font-weight: 500;
+    padding: 5px 0;
+    position: relative;
+    transition: color 0.3s ease;
+    display: inline-block;
+    color: #13724f;
+
+}
+
+.header_item a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: #0b2703;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.header_item a:hover {
+    color: #2c3e50;
+}
+
+.header_item a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Мобильное меню */
+.mobile-menu {
+    display: none;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background: #13724f;
+    transition: all 0.3s ease;
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    min-width: 200px;
+    right: 20px !important;
+    left: auto !important;
+}
+
+.dropdown-item {
+    color: #13724f !important;
+    padding: 12px 20px !important;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background: #f8f9fa !important;
+    transform: translateX(5px);
+}
+
+/* Адаптация */
+@media screen and (max-width: 992px) {
+    .desktop-menu {
+        display: none;
+    }
+    
+    .mobile-menu {
+        display: block;
+        margin-right: 20px;
+    }
+    
+    .header_nav {
+        padding: 15px 20px;
+    }
+    
+    .logo {
+        padding: 10px 0;
+    }
+    
+    .wrapper__title {
+        font-size: 3rem !important;
+        text-align: center;
+    }
+    
+    .wrapper {
+        padding: 0 2rem !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .logo a {
+        font-size: 18px;
+    }
+    
+    .wrapper__title {
+        font-size: 2.5rem !important;
+    }
+    
+    .dropdown-menu {
+        min-width: 180px;
+    }
+}
+
+/* Сетка типов клюшек */
+.club-types-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin: 2rem 0;
+}
+
+.club-card {
+    padding: 1.5rem;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.club-card:hover {
+    transform: translateY(-5px);
+}
+
+.club-card img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin: 0 auto 1rem;
+    display: block;
+}
+
+.club-specs {
+    list-style: none;
+    padding-left: 0;
+    margin: 1rem 0;
+}
+
+.club-specs li {
+    padding: 0.3rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Гид по выбору */
+.selection-guide {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.guide-step {
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    position: relative;
+}
+
+.step-number {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 30px;
+    height: 30px;
+    background: #13724f;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .club-card {
+        padding: 1rem;
+    }
+    
+    .selection-guide {
+        grid-template-columns: 1fr;
+    }
+}

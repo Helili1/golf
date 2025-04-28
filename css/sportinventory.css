@@ -450,6 +450,11 @@
     .article-meta {
       font-size: 0.8rem;
     }
+
+    .equipment-card img{
+        width: 300px;
+        height: 300px;
+    }
   }
   
   /* Мобильное меню */

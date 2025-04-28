@@ -3,13 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Статья: Типы клюшек</title>
-    <link rel="stylesheet" href="../css/aboutgolf.css" />
+    <title>Типы клюшек в гольфе</title>
+    <link rel="stylesheet" href="../css/types.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
-      crossorigin="anonymous"
     />
   </head>
   <body>
@@ -23,16 +21,16 @@
         <!-- Десктопное меню -->
         <ul class="header_ul desktop-menu">
           <li class="header_item">
-            <a href="../pages/abotgolf.html">О гольфе</a>
+            <a href="./abotgolf.html">О гольфе</a>
           </li>
           <li class="header_item">
-            <a href="../pages/golfschool.html">Гольф в МБОУ СОШ 17</a>
+            <a href="./golfschool.html">Гольф в МБОУ СОШ 17</a>
           </li>
           <li class="header_item">
-            <a href="../pages/timesheet.html">Расписание</a>
+            <a href="./timesheet.html">Расписание</a>
           </li>
           <li class="header_item">
-            <a href="../pages/contacts.html">Контакты</a>
+            <a href="./contacts.html">Контакты</a>
           </li>
         </ul>
 
@@ -50,73 +48,162 @@
           </button>
           <ul class="dropdown-menu">
             <li>
-              <a class="dropdown-item" href="../pages/abotgolf.html">О гольфе</a>
+              <a class="dropdown-item" href="./abotgolf.html">О гольфе</a>
             </li>
             <li>
-              <a class="dropdown-item" href="../pages/golfschool.html"
+              <a class="dropdown-item" href="./golfschool.html"
                 >Гольф в МБОУ СОШ 17</a
               >
             </li>
             <li>
-              <a class="dropdown-item" href="../pages/timesheet.html"
-                >Расписание</a
-              >
+              <a class="dropdown-item" href="./timesheet.html">Расписание</a>
             </li>
             <li>
-              <a class="dropdown-item" href="../pages/contacts.html">Контакты</a>
+              <a class="dropdown-item" href="./contacts.html">Контакты</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <main class="article-container">
+
+    <main class="content-wrapper">
       <div class="back-button">
-        <a href="../pages/abotgolf.html" class="btn btn-outline-success"
-          >← Назад к статьям</a
-        >
+        <a href="../pages/abotgolf.html" class="back-link">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-arrow-left"
+          >
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          Все статьи
+        </a>
       </div>
 
       <article class="article-card">
         <div class="article-header">
-          <h1>Типы клюшек</h1>
+          <h1 class="article-title">
+            Типы клюшек в гольфе: от драйвера до паттера
+          </h1>
+          <div class="article-meta">
+            <span class="author">Автор: Михаил Иванов</span>
+            <span class="date">10 декабря 2023</span>
+          </div>
           <img
-            src="../img/к4.png"
-            alt="История гольфа"
+            src="../img/golf-clubs-set.jpg"
+            alt="Набор клюшек"
             class="article-main-img"
           />
         </div>
 
         <div class="article-content">
-          <p>Текст статьи с описанием истории гольфа...</p>
+          <section class="chapter">
+            <h2>Основные категории клюшек</h2>
+            <p>
+              Современный набор гольфиста включает несколько типов клюшек,
+              каждая из которых выполняет особую функцию на поле:
+            </p>
 
-          <div class="article-image-group">
-            <img
-              src="../img/history1.jpg"
-              alt="Историческое изображение"
-              class="article-inline-img"
-            />
-            <img
-              src="../img/history2.jpg"
-              alt="Эволюция инвентаря"
-              class="article-inline-img"
-            />
-          </div>
+            <div class="quote-block">
+              <blockquote>
+                "Правильный выбор клюшки - это как выбор нужного слова в поэзии"
+                <cite>- Тайгер Вудс, легенда гольфа</cite>
+              </blockquote>
+            </div>
+          </section>
 
-          <h2>Подзаголовок раздела</h2>
-          <p>Дополнительный текст с описанием...</p>
-          <img
-            src="../img/history-chart.png"
-            alt="Хронология"
-            class="article-wide-img"
-          />
+          <section class="chapter">
+            <h2>Характеристики клюшек</h2>
+            <div class="club-types-grid">
+              <div class="club-card wood-card">
+                <img src="../img/driver-club.png" alt="Драйвер" />
+                <h3>Вуды (Драйверы)</h3>
+                <ul class="club-specs">
+                  <li>Длина: 43-46 дюймов</li>
+                  <li>Угол наклона: 8-15°</li>
+                  <li>Дальность: 200-300 м</li>
+                </ul>
+                <p>Используются для первых ударов на длинные дистанции</p>
+              </div>
+
+              <div class="club-card iron-card">
+                <img src="../img/iron-club.png" alt="Айрон" />
+                <h3>Айроны</h3>
+                <ul class="club-specs">
+                  <li>Номера: 3-9 + PW</li>
+                  <li>Угол наклона: 20-48°</li>
+                  <li>Дальность: 70-180 м</li>
+                </ul>
+                <p>Для точных ударов средней дистанции</p>
+              </div>
+
+              <div class="club-card hybrid-card">
+                <img src="../img/hybrid-club.png" alt="Гибрид" />
+                <h3>Гибриды</h3>
+                <ul class="club-specs">
+                  <li>Сочетание вудов и айронов</li>
+                  <li>Угол наклона: 16-27°</li>
+                  <li>Дальность: 150-220 м</li>
+                </ul>
+                <p>Универсальные клюшки для сложных ландшафтов</p>
+              </div>
+
+              <div class="club-card wedge-card">
+                <img src="../img/wedge-club.png" alt="Ведж" />
+                <h3>Веджи</h3>
+                <ul class="club-specs">
+                  <li>Типы: Sand, Gap, Lob</li>
+                  <li>Угол наклона: 50-64°</li>
+                  <li>Дальность: до 120 м</li>
+                </ul>
+                <p>Для коротких ударов и выхода из бункеров</p>
+              </div>
+
+              <div class="club-card putter-card">
+                <img src="../img/putter-club.png" alt="Паттер" />
+                <h3>Паттеры</h3>
+                <ul class="club-specs">
+                  <li>Длина: 32-35 дюймов</li>
+                  <li>Угол наклона: 3-5°</li>
+                  <li>Дальность: катание по грину</li>
+                </ul>
+                <p>Для финальных ударов в лунку</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="chapter">
+            <h2>Как выбрать клюшку</h2>
+            <div class="selection-guide">
+              <div class="guide-step">
+                <div class="step-number">1</div>
+                <h3>Определите уровень игры</h3>
+                <p>Новичкам лучше начинать с гибридов</p>
+              </div>
+              <div class="guide-step">
+                <div class="step-number">2</div>
+                <h3>Учитывайте физические данные</h3>
+                <p>Рост, сила удара, гибкость</p>
+              </div>
+              <div class="guide-step">
+                <div class="step-number">3</div>
+                <h3>Тестируйте перед покупкой</h3>
+                <p>Посетите профессиональную примерку</p>
+              </div>
+            </div>
+          </section>
         </div>
       </article>
     </main>
-    <script src="../js/index.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-      crossorigin="anonymous"
-    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Статья: Правила гольфа</title>
-    <link rel="stylesheet" href="../css/aboutgolf.css" />
+    <title>Статья: Основные правила гольфа</title>
+    <link rel="stylesheet" href="../css/rules.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -23,16 +23,16 @@
         <!-- Десктопное меню -->
         <ul class="header_ul desktop-menu">
           <li class="header_item">
-            <a href="../pages/abotgolf.html">О гольфе</a>
+            <a href="./abotgolf.html">О гольфе</a>
           </li>
           <li class="header_item">
-            <a href="../pages/golfschool.html">Гольф в МБОУ СОШ 17</a>
+            <a href="./golfschool.html">Гольф в МБОУ СОШ 17</a>
           </li>
           <li class="header_item">
-            <a href="../pages/timesheet.html">Расписание</a>
+            <a href="./timesheet.html">Расписание</a>
           </li>
           <li class="header_item">
-            <a href="../pages/contacts.html">Контакты</a>
+            <a href="./contacts.html">Контакты</a>
           </li>
         </ul>
 
@@ -50,65 +50,129 @@
           </button>
           <ul class="dropdown-menu">
             <li>
-              <a class="dropdown-item" href="../pages/abotgolf.html">О гольфе</a>
+              <a class="dropdown-item" href="./abotgolf.html">О гольфе</a>
             </li>
             <li>
-              <a class="dropdown-item" href="../pages/golfschool.html"
+              <a class="dropdown-item" href="./golfschool.html"
                 >Гольф в МБОУ СОШ 17</a
               >
             </li>
             <li>
-              <a class="dropdown-item" href="../pages/timesheet.html"
-                >Расписание</a
-              >
+              <a class="dropdown-item" href="./timesheet.html">Расписание</a>
             </li>
             <li>
-              <a class="dropdown-item" href="../pages/contacts.html">Контакты</a>
+              <a class="dropdown-item" href="./contacts.html">Контакты</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <main class="article-container">
+    <main class="content-wrapper">
       <div class="back-button">
-        <a href="../pages/abotgolf.html" class="btn btn-outline-success"
-          >← Назад к статьям</a
-        >
+        <a href="../pages/abotgolf.html" class="back-link">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-arrow-left"
+          >
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          Все статьи
+        </a>
       </div>
 
       <article class="article-card">
         <div class="article-header">
-          <h1>Правила гольфа</h1>
+          <h1 class="article-title">
+            Основные правила гольфа: от этикета до подсчета очков
+          </h1>
+          <div class="article-meta">
+            <span class="author">Автор: Анна Смирнова</span>
+            <span class="date">20 октября 2025</span>
+          </div>
           <img
             src="../img/к2.png"
-            alt="История гольфа"
+            alt="Правила гольфа"
             class="article-main-img"
           />
         </div>
 
         <div class="article-content">
-          <p>Текст статьи с описанием истории гольфа...</p>
+          <section class="chapter">
+            <h2>Базовые принципы</h2>
+            <p>
+              Гольф — игра чести, где соблюдение правил и этикета не менее
+              важно, чем техническое мастерство. Основная цель: провести мяч от
+              стартовой площадки до лунки за минимальное количество ударов.
+            </p>
+            <div class="quote-block">
+              <blockquote>
+                "Играй мяч как он лежит, играй площадку как она есть, и если ни
+                то ни другое невозможно, поступай по справедливости"
+                <cite>- Золотое правило гольфа</cite>
+              </blockquote>
+            </div>
+          </section>
 
-          <div class="article-image-group">
-            <img
-              src="../img/history1.jpg"
-              alt="Историческое изображение"
-              class="article-inline-img"
-            />
-            <img
-              src="../img/history2.jpg"
-              alt="Эволюция инвентаря"
-              class="article-inline-img"
-            />
-          </div>
+          <section class="chapter">
+            <h2>Основные положения</h2>
+            <p>Ключевые аспекты правил:</p>
+            <ul class="facts-list">
+              <li>Максимум 14 клюшек в сумке игрока</li>
+              <li>Запрет на улучшение позиции мяча</li>
+              <li>Порядок игры: дальше всех от лунки бьёт первым</li>
+              <li>Штрафные удары за потерю мяча или выход за пределы поля</li>
+            </ul>
+          </section>
 
-          <h2>Подзаголовок раздела</h2>
-          <p>Дополнительный текст с описанием...</p>
-          <img
-            src="../img/history-chart.png"
-            alt="Хронология"
-            class="article-wide-img"
-          />
+          <section class="chapter">
+            <h2>Система подсчёта</h2>
+            <p>Основные виды счёта:</p>
+            <div class="timeline">
+              <div class="timeline-item">
+                <h3>Пар</h3>
+                <p>Стандартное количество ударов для лунки</p>
+              </div>
+              <div class="timeline-item">
+                <h3>Берди</h3>
+                <p>На 1 удар меньше пара</p>
+              </div>
+              <div class="timeline-item">
+                <h3>Игл</h3>
+                <p>На 2 удара меньше пара</p>
+              </div>
+              <div class="timeline-item">
+                <h3>Боги</h3>
+                <p>На 1 удар больше пара</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="chapter">
+            <h2>Этикет на поле</h2>
+            <div class="rules-grid">
+              <div class="rule-card">
+                <h3>Безопасность</h3>
+                <p>Убедитесь, что никто не находится в зоне удара</p>
+              </div>
+              <div class="rule-card">
+                <h3>Темп игры</h3>
+                <p>Поддерживайте скорость игры, не задерживайте группу</p>
+              </div>
+              <div class="rule-card">
+                <h3>Уход за полем</h3>
+                <p>Восстанавливайте дёрн, разравнивайте бункеры</p>
+              </div>
+            </div>
+          </section>
         </div>
       </article>
     </main>

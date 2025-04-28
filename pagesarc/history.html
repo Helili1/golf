@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Статья: История гольфа</title>
-    <link rel="stylesheet" href="../css/aboutgolf.css" />
+    <link rel="stylesheet" href="../css/history.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -23,16 +23,16 @@
         <!-- Десктопное меню -->
         <ul class="header_ul desktop-menu">
           <li class="header_item">
-            <a href="../pages/abotgolf.html">О гольфе</a>
+            <a href="./abotgolf.html">О гольфе</a>
           </li>
           <li class="header_item">
-            <a href="../pages/golfschool.html">Гольф в МБОУ СОШ 17</a>
+            <a href="./golfschool.html">Гольф в МБОУ СОШ 17</a>
           </li>
           <li class="header_item">
-            <a href="../pages/timesheet.html">Расписание</a>
+            <a href="./timesheet.html">Расписание</a>
           </li>
           <li class="header_item">
-            <a href="../pages/contacts.html">Контакты</a>
+            <a href="./contacts.html">Контакты</a>
           </li>
         </ul>
 
@@ -50,35 +50,54 @@
           </button>
           <ul class="dropdown-menu">
             <li>
-              <a class="dropdown-item" href="../pages/abotgolf.html">О гольфе</a>
+              <a class="dropdown-item" href="./abotgolf.html">О гольфе</a>
             </li>
             <li>
-              <a class="dropdown-item" href="../pages/golfschool.html"
+              <a class="dropdown-item" href="./golfschool.html"
                 >Гольф в МБОУ СОШ 17</a
               >
             </li>
             <li>
-              <a class="dropdown-item" href="../pages/timesheet.html"
-                >Расписание</a
-              >
+              <a class="dropdown-item" href="./timesheet.html">Расписание</a>
             </li>
             <li>
-              <a class="dropdown-item" href="../pages/contacts.html">Контакты</a>
+              <a class="dropdown-item" href="./contacts.html">Контакты</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <main class="article-container">
+    <main class="content-wrapper">
       <div class="back-button">
-        <a href="../pages/abotgolf.html" class="btn btn-outline-success"
-          >← Назад к статьям</a
-        >
+        <a href="../pages/abotgolf.html" class="back-link">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-arrow-left"
+          >
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          Все статьи
+        </a>
       </div>
 
       <article class="article-card">
         <div class="article-header">
-          <h1>История гольфа</h1>
+          <h1 class="article-title">
+            История развития гольфа: от пастушьих забав до олимпийского спорта
+          </h1>
+          <div class="article-meta">
+            <span class="author">Автор: Иван Петров</span>
+            <span class="date">15 апреля 2025</span>
+          </div>
           <img
             src="../img/к1.png"
             alt="История гольфа"
@@ -87,28 +106,63 @@
         </div>
 
         <div class="article-content">
-          <p>Текст статьи с описанием истории гольфа...</p>
+          <section class="chapter">
+            <h2>Истоки игры</h2>
+            <p>
+              История гольфа окутана тайнами и легендами. Самые ранние
+              упоминания об играх с клюшкой и мячом датируются временем Римской
+              империи, где солдаты развлекались, ударяя кожаными мячами,
+              набитыми перьями. Однако современный гольф в его классическом виде
+              зародился в средневековой Шотландии.
+            </p>
+            <div class="quote-block">
+              <blockquote>
+                "Гольф - это больше чем спорт, это философия жизни, где каждая
+                лунка учит терпению и стратегии"
+                <cite>- Старинная шотландская поговорка</cite>
+              </blockquote>
+            </div>
+          </section>
 
-          <div class="article-image-group">
+          <section class="chapter">
+            <h2>Шотландский период</h2>
+            <p>
+              Первое письменное упоминание о гольфе относится к 1457 году, когда
+              король Яков II запретил игру как отвлекающую от военной
+              подготовки. Интересные факты:
+            </p>
+            <ul class="facts-list">
+              <li>
+                Первое поле на 18 лунок появилось в Сент-Эндрюсе (1552 г.)
+              </li>
+              <li>Первые кожаные мячи весили до 200 грамм</li>
+              <li>Деревянные клюшки обтягивали кожей для прочности</li>
+            </ul>
             <img
-              src="../img/history1.jpg"
-              alt="Историческое изображение"
-              class="article-inline-img"
+              src="../img/old-clubs.jpg"
+              alt="Старинные клюшки"
+              class="content-img float-right"
             />
-            <img
-              src="../img/history2.jpg"
-              alt="Эволюция инвентаря"
-              class="article-inline-img"
-            />
-          </div>
+          </section>
 
-          <h2>Подзаголовок раздела</h2>
-          <p>Дополнительный текст с описанием...</p>
-          <img
-            src="../img/history-chart.png"
-            alt="Хронология"
-            class="article-wide-img"
-          />
+          <section class="chapter">
+            <h2>Современная эра</h2>
+            <p>С XIX века гольф начал приобретать современные черты:</p>
+            <div class="timeline">
+              <div class="timeline-item">
+                <h3>1860</h3>
+                <p>Первый открытый чемпионат в Прествике</p>
+              </div>
+              <div class="timeline-item">
+                <h3>1900</h3>
+                <p>Включение в программу Олимпийских игр</p>
+              </div>
+              <div class="timeline-item">
+                <h3>1934</h3>
+                <p>Учреждение Мастерс — самого престижного турнира</p>
+              </div>
+            </div>
+          </section>
         </div>
       </article>
     </main>

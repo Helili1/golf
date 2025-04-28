@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Статья: Спортивный инвентарь</title>
-    <link rel="stylesheet" href="../css/aboutgolf.css" />
+    <title>Статья: Инвентарь для гольфа</title>
+    <!-- <link rel="stylesheet" href="../css/history.css" /> -->
+    <link rel="stylesheet" href="../css/sportinventory.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -23,16 +24,16 @@
         <!-- Десктопное меню -->
         <ul class="header_ul desktop-menu">
           <li class="header_item">
-            <a href="../pages/abotgolf.html">О гольфе</a>
+            <a href="./abotgolf.html">О гольфе</a>
           </li>
           <li class="header_item">
-            <a href="../pages/golfschool.html">Гольф в МБОУ СОШ 17</a>
+            <a href="./golfschool.html">Гольф в МБОУ СОШ 17</a>
           </li>
           <li class="header_item">
-            <a href="../pages/timesheet.html">Расписание</a>
+            <a href="./timesheet.html">Расписание</a>
           </li>
           <li class="header_item">
-            <a href="../pages/contacts.html">Контакты</a>
+            <a href="./contacts.html">Контакты</a>
           </li>
         </ul>
 
@@ -50,69 +51,140 @@
           </button>
           <ul class="dropdown-menu">
             <li>
-              <a class="dropdown-item" href="../pages/abotgolf.html">О гольфе</a>
+              <a class="dropdown-item" href="./abotgolf.html">О гольфе</a>
             </li>
             <li>
-              <a class="dropdown-item" href="../pages/golfschool.html"
+              <a class="dropdown-item" href="./golfschool.html"
                 >Гольф в МБОУ СОШ 17</a
               >
             </li>
             <li>
-              <a class="dropdown-item" href="../pages/timesheet.html"
-                >Расписание</a
-              >
+              <a class="dropdown-item" href="./timesheet.html">Расписание</a>
             </li>
             <li>
-              <a class="dropdown-item" href="../pages/contacts.html">Контакты</a>
+              <a class="dropdown-item" href="./contacts.html">Контакты</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <main class="article-container">
+    <main class="content-wrapper">
       <div class="back-button">
-        <a href="../pages/abotgolf.html" class="btn btn-outline-success"
-          >← Назад к статьям</a
-        >
+        <a href="../pages/abotgolf.html" class="back-link">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-arrow-left"
+          >
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          Все статьи
+        </a>
       </div>
 
       <article class="article-card">
         <div class="article-header">
-          <h1>Спортивный инвентарь</h1>
+          <h1 class="article-title">
+            Спортивный инвентарь в гольфе: от клюшек до аксессуаров
+          </h1>
+          <div class="article-meta">
+            <span class="author">Автор: Алексей Волков</span>
+            <span class="date">5 ноября 2024</span>
+          </div>
           <img
             src="../img/к3.png"
-            alt="История гольфа"
+            alt="Инвентарь для гольфа"
             class="article-main-img"
           />
         </div>
 
         <div class="article-content">
-          <p>Текст статьи с описанием истории гольфа...</p>
+          <section class="chapter">
+            <h2>Основные элементы экипировки</h2>
+            <p>
+              Современный гольф требует специализированного оборудования, где
+              каждая деталь влияет на результат. Базовый набор включает:
+            </p>
+            <div class="quote-block">
+              <blockquote>
+                "Правильно подобранные клюшки - это 50% успеха в гольфе.
+                Остальное - техника и упорство"
+                <cite>- Том Уотсон, легенда гольфа</cite>
+              </blockquote>
+            </div>
+          </section>
 
-          <div class="article-image-group">
-            <img
-              src="../img/history1.jpg"
-              alt="Историческое изображение"
-              class="article-inline-img"
-            />
-            <img
-              src="../img/history2.jpg"
-              alt="Эволюция инвентаря"
-              class="article-inline-img"
-            />
-          </div>
+          <section class="chapter">
+            <h2>Виды клюшек</h2>
+            <div class="equipment-grid">
+              <div class="equipment-card">
+                <img src="../img/клюшки.png" alt="клюшки" />
+                <h3></h3>
+                <p></p>
+              </div>
+            </div>
+            <ul class="facts-list">
+              <li>Максимум 14 клюшек в наборе</li>
+              <li>Номер клюшки указывает на угол наклона</li>
+              <li>Графитовые или стальные рукояти</li>
+            </ul>
+          </section>
 
-          <h2>Подзаголовок раздела</h2>
-          <p>Дополнительный текст с описанием...</p>
-          <img
-            src="../img/history-chart.png"
-            alt="Хронология"
-            class="article-wide-img"
-          />
+          <section class="chapter">
+            <h2>Мячи для гольфа</h2>
+            <div class="ball-specs">
+              <div class="spec-item">
+                <h3>Конструкция</h3>
+                <ul>
+                  <li>2-5 слоёв</li>
+                  <li>Диаметр 42.67 мм</li>
+                  <li>Вес не более 45.93 г</li>
+                </ul>
+              </div>
+              <div class="spec-item">
+                <h3>Материалы</h3>
+                <ul>
+                  <li>Сурлин (покрытие)</li>
+                  <li>Полиуретан</li>
+                  <li>Резиновый сердечник</li>
+                </ul>
+              </div>
+            </div>
+            <img
+              src="../img/golf-balls.jpg"
+              alt="Мячи для гольфа"
+              class="content-img float-right"
+            />
+          </section>
+
+          <section class="chapter">
+            <h2>Важные аксессуары</h2>
+            <div class="accessories-list">
+              <div class="accessory-item">
+                <h3>Сумка</h3>
+                <p>Специальная тележка или рюкзак для переноски инвентаря</p>
+              </div>
+              <div class="accessory-item">
+                <h3>Перчатки</h3>
+                <p>Кожаные перчатки для лучшего сцепления</p>
+              </div>
+              <div class="accessory-item">
+                <h3>Обувь</h3>
+                <p>Шипованная обувь с защитой от влаги</p>
+              </div>
+            </div>
+          </section>
         </div>
       </article>
     </main>
-    <script src="../js/index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"

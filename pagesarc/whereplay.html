@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Статья: Где можно тренироваться?</title>
-    <link rel="stylesheet" href="../css/aboutgolf.css" />
+    <title>Где можно тренироваться</title>
+    <link rel="stylesheet" href="../css/whereplay.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
-      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
   </head>
   <body>
@@ -23,16 +25,16 @@
         <!-- Десктопное меню -->
         <ul class="header_ul desktop-menu">
           <li class="header_item">
-            <a href="./pages/abotgolf.html">О гольфе</a>
+            <a href="./abotgolf.html">О гольфе</a>
           </li>
           <li class="header_item">
-            <a href="./pages/golfschool.html">Гольф в МБОУ СОШ 17</a>
+            <a href="./golfschool.html">Гольф в МБОУ СОШ 17</a>
           </li>
           <li class="header_item">
-            <a href="./pages/timesheet.html">Расписание</a>
+            <a href="./timesheet.html">Расписание</a>
           </li>
           <li class="header_item">
-            <a href="./pages/contacts.html">Контакты</a>
+            <a href="./contacts.html">Контакты</a>
           </li>
         </ul>
 
@@ -50,72 +52,140 @@
           </button>
           <ul class="dropdown-menu">
             <li>
-              <a class="dropdown-item" href="./pages/abotgolf.html"
-                >О гольфе</a
-              >
+              <a class="dropdown-item" href="./abotgolf.html">О гольфе</a>
             </li>
             <li>
-              <a class="dropdown-item" href="./pages/golfschool.html"
+              <a class="dropdown-item" href="./golfschool.html"
                 >Гольф в МБОУ СОШ 17</a
               >
             </li>
             <li>
-              <a class="dropdown-item" href="./pages/timesheet.html"
-                >Расписание</a
-              >
+              <a class="dropdown-item" href="./timesheet.html">Расписание</a>
             </li>
             <li>
-              <a class="dropdown-item" href="./pages/contacts.html"
-                >Контакты</a
-              >
+              <a class="dropdown-item" href="./contacts.html">Контакты</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <main class="article-container">
+
+    <main class="content-wrapper">
       <div class="back-button">
-        <a href="../pages/abotgolf.html" class="btn btn-outline-success"
-          >← Назад к статьям</a
-        >
+        <a href="../pages/abotgolf.html" class="back-link">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-arrow-left"
+          >
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          Все статьи
+        </a>
       </div>
 
       <article class="article-card">
         <div class="article-header">
-          <h1>Где можно тренироваться?</h1>
+          <h1 class="article-title">Где можно тренироваться в нашем городе</h1>
+          <div class="article-meta">
+          </div>
           <img
             src="../img/к6.png"
-            alt="История гольфа"
+            alt="Тренировочные площадки"
             class="article-main-img"
           />
         </div>
 
         <div class="article-content">
-          <p>Текст статьи с описанием истории гольфа...</p>
+          <section class="chapter">
+            <h2>Тренировочные площадки</h2>
+            <div class="locations-grid">
+              <div class="location-card">
+                <div class="location-header">
+                  <i class="bi bi-geo-alt"></i>
+                  <h3>Школьное поле МБОУ СОШ 17</h3>
+                </div>
+                <div class="location-body">
+                  <ul class="location-info">
+                    <li><strong>Адрес:</strong> ул. Спортивная, 15</li>
+                    <li><strong>Часы работы:</strong> Пн-Сб 15:00-19:00</li>
+                    <li><strong>Особенности:</strong> 5 тренировочных лузек</li>
+                  </ul>
+                  <a href="./golfschool.html" class="location-btn">
+                    Подробнее о школе
+                  </a>
+                </div>
+              </div>
 
-          <div class="article-image-group">
-            <img
-              src="../img/history1.jpg"
-              alt="Историческое изображение"
-              class="article-inline-img"
-            />
-            <img
-              src="../img/history2.jpg"
-              alt="Эволюция инвентаря"
-              class="article-inline-img"
-            />
-          </div>
+              <div class="location-card">
+                <div class="location-header">
+                  <i class="bi bi-building"></i>
+                  <h3>Городской гольф-клуб "Парк-гольф"</h3>
+                </div>
+                <div class="location-body">
+                  <ul class="location-info">
+                    <li><strong>Адрес:</strong> Центральный парк</li>
+                    <li><strong>Часы работы:</strong> Ежедневно 10:00-22:00</li>
+                    <li><strong>Особенности:</strong> Крытый симулятор</li>
+                  </ul>
+                  <a href="tel:+79995551234" class="location-btn">
+                    Записаться: +7 (999) 555-12-34
+                  </a>
+                </div>
+              </div>
 
-          <h2>Подзаголовок раздела</h2>
-          <p>Дополнительный текст с описанием...</p>
-          <img
-            src="../img/history-chart.png"
-            alt="Хронология"
-            class="article-wide-img"
-          />
+              <div class="location-card">
+                <div class="location-header">
+                  <i class="bi bi-tree"></i>
+                  <h3>Секция в парке "Зеленый драйв"</h3>
+                </div>
+                <div class="location-body">
+                  <ul class="location-info">
+                    <li><strong>Адрес:</strong> Парк культуры и отдыха</li>
+                    <li><strong>Часы работы:</strong> Ср-Вс 12:00-18:00</li>
+                    <li><strong>Особенности:</strong> Бесплатные тренировки</li>
+                  </ul>
+                  <a href="./timesheet.html" class="location-btn">
+                    Посмотреть расписание
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="chapter">
+            <h2>Правила посещения</h2>
+            <div class="rules-grid">
+              <div class="rule-card">
+                <i class="bi bi-person-check"></i>
+                <h3>Регистрация</h3>
+                <p>Обязательная предварительная запись</p>
+              </div>
+              <div class="rule-card">
+                <i class="bi bi-clock-history"></i>
+                <h3>Время</h3>
+                <p>Приходите за 15 минут до начала</p>
+              </div>
+              <div class="rule-card">
+                <i class="bi bi-shield-check"></i>
+                <h3>Экипировка</h3>
+                <p>Спортивная форма обязательна</p>
+              </div>
+            </div>
+          </section>
         </div>
       </article>
     </main>
+
+    <!-- Скрипты -->
     <script src="../js/index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
